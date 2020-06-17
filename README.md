@@ -1,4 +1,4 @@
-# fonted-bootstrap
+# frontend-bootstrap
 
 > css效果基本都是通过bootstrap来实现的，因为都是比较成熟的现成的模板。没必要重复造轮子。
 
