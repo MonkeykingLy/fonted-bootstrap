@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- 注册模块的微调 -->
+    <link rel="stylesheet" href="static/css/register.css">
+</head>
+
+<body>
+    <!-- 导航栏 同其他-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">ReadBook</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- 注册栏 -->
+    <!-- 这个我就是根据登录框改的增加了一些input，改变了一下文字 -->
+    <div class="container">
+
+        <form class="form-signin">
+            <h2 class="form-signin-heading">Register</h2>
+            <label for="inputUsername" class="">User name:</label>
+            <input type="text" id="inputUsername" name=username class="form-control" placeholder="User name" required autofocus>
+            <label for="inputPassword" class="">Password:</label>
+            <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+            <label for="inputEmail" class="">Email address:</address></label>
+            <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email" required autofocus>
+            <label for="inputGender" class="">Gender:</label>
+            <div class="checkbox">
+                <label>
+              <input type="radio" value="Male" name="gender"> Male </label>
+                <label> <input type="radio" value="Female" name="gender"> Female</label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+        </form>
+
+    </div>
+
+
+    <!-- sr-only -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

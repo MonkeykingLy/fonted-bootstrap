@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- 这个css是对与这个page的微调 -->
+    <link rel="stylesheet" href="static/css/book.css">
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <!-- 这个js就是主要的程序，用jquery写的，目前无bug，运行ok，速度也还行，已经集成到后端的模板了，测试也没问题 -->
+    <script src="static/js/app.js"></script>
+</head>
+
+<body>
+    <!-- 结构都是直接从bootstrap上找的，没有很仔细的调试 -->
+    <!-- container这个部分就是标题以及搜索框的设置 -->
+    <!-- 这个页面我没添加导航栏，后端模版文件已经添加了 -->
+    <div class="container">
+        <h1 id="title" class="text-center mt-5">Book Finder</h1>
+        <div class="row">
+            <div id="input" class="input-group mx-auto col-lg-6 col-md-8 col-sm-12">
+                <input id="search-box" type="text" class="form-control" placeholder="Search Book!..">
+                <button id="search" class="btn btn-primary" onclick="">Search</button>
+            </div>
+        </div>
+    </div>
+    <!-- 这个部分是搜索结果的展示区，默认状态为hidden，如果判断返回有结果则显示出来 -->
+    <div class="book-list">
+        <h2 class="text-center">Search Results</h2>
+        <div id="list-output">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- 导航栏的微调 -->
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+
+<body>
+    <!-- 导航栏 这个就是我们所有页面都会有的一个导航栏 -->
+    <!-- 可以增改导航栏上的模块 -->
+    <!-- https://v3.bootcss.com/components/#input-groups -->
+    <!-- bootstrap 中文文档地址可以查阅一些模块，我目前调用的包是v3.3.7的 -->
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="#">ReadBook</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- 这个是核心部分， -->
+    <div class="container">
+        <!-- 我这里预留了一些空间，方便后面弹出警告框，例如用户名不存在或者密码错误之类的 -->
+        <form class="form-signin" action="" method="POST">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            <label for="inputName" class="sr-only">Email address</label>
+            <input type="text" id="inputName" class="form-control" name="username" placeholder="User name" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+            <div class="checkbox">
+                <label>
+              <input type="checkbox" value="remember-me"> Remember me
+              <!-- 这个暂时没用，我还没有做到session模块，暂时保留 -->
+            </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        </form>
+
+    </div>
+
+
+    <!--  -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
